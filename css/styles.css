@@ -1,0 +1,28 @@
+:root{
+  --primary: #2e7d32; /* Aqui busque el color mas parecido a la bandera de mi Huila */
+  --accent: #ffb300;  /* lo mismo aqui */
+  --dark: #163a24;
+  --light: #f7f9f8;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif;
+}
+
+.hero-bg{
+  background: linear-gradient(180deg, rgba(22,58,36,.85), rgba(22,58,36,.6)), url('https://www.semana.com/resizer/v2/LJGL43HQ6NHBTEBAP7RTB7FBMQ.jpeg?auth=9507a28678ec42a3932eb6427c0cc922265ca84113841b2e7a9e0507948071b1&smart=true&quality=75&width=1280&height=720') center/cover no-repeat;
+  color: #fff;
+}
+.hero-img{ border: 4px solid rgba(255,255,255,.2); }
+
+.card .stretched-link::after{ position: static; }
+
+.thumb{
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  width: 100%;
+  border-radius: .75rem;
+}
+
+:focus-visible{ outline: 3px solid var(--accent); outline-offset: 2px; }
